@@ -3,36 +3,37 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
 }
+
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 1rem;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+main {
+    padding: 20px;
     text-align: center;
 }
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+
+.description p {
+    margin: 10px 0;
 }
-img {
+
+.gif img {
     max-width: 100%;
     height: auto;
 }
+
 footer {
-    background: #007bff;
-    color: #fff;
+    background-color: #f4f4f4;
+    padding: 10px;
     text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+    font-size: 0.9em;
 }
