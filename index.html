@@ -3,32 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlobCapture</title>
+    <title>BlobCapture - Web Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="BlobCapture.png" alt="BlobCapture Logo">
-        </div>
+        <h1>BlobCapture</h1>
     </header>
-
     <main>
-        <section class="description">
+        <div class="content">
             <h1>BlobCapture</h1>
-            <p>BlobCapture, ekran görüntülerini panoya kopyalayan ve veritabanına BLOB formatında saklamak için tasarlanmış bir uygulamadır. Bu sayede, ekran görüntülerini kolayca saklayabilir ve yönetebilirsiniz.</p>
-            <p>Uygulama, yalnızca Windows işletim sisteminde çalışmaktadır ve macOS ile uyumlu değildir.</p>
-            <p>Ekran görüntüsü alırken elde edilen base64 kodlarını resme dönüştürmek isterseniz, <a href="https://base64.guru/converter/decode/image">bu web sitesini</a> kullanabilirsiniz.</p>
-        </section>
-
-        <section class="gif">
-            <h2>Uygulamanın Ekran Görüntüsü</h2>
-            <img src="your-screenshot-gif-url.gif" alt="BlobCapture Screenshot">
-        </section>
+            <p>BlobCapture is a simple and efficient screenshot capture tool designed to quickly capture any selected region of your screen and store the image in a format that can be easily used for database storage. The tool is lightweight and user-friendly, making it perfect for developers or anyone who needs a fast way to capture and manage screenshots for database applications.</p>
+            <p>If you need to convert the base64 encoded screenshots back into image format, you can use <a href="https://base64.guru/converter/decode/image" target="_blank">this website</a>.</p>
+            <h2>Why I Built This Application</h2>
+            <p>BlobCapture was created to simplify the process of handling images for database storage. Instead of saving screenshots to the file system and then uploading them to a database, this tool allows users to directly capture screenshots in a format that can be easily converted and stored as BLOBs in a database. This reduces the need for file management and makes database integration smoother, particularly for developers who need to manage images efficiently.</p>
+            <h2>Target Audience</h2>
+            <ul>
+                <li><strong>Developers</strong> who work with database applications and need a quick and efficient way to manage screenshots.</li>
+                <li><strong>Database Administrators</strong> looking to simplify the process of storing images in databases.</li>
+                <li><strong>Data Analysts</strong> who want to document visual data directly into databases without file system dependencies.</li>
+                <li><strong>General users</strong> who need an easy way to capture and prepare images for database use.</li>
+            </ul>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Capture any selected region of the screen.</li>
+                <li>Copy the screenshot to the clipboard in Base64 format for easy use in databases.</li>
+                <li>Designed to streamline image handling for database storage (BLOB format).</li>
+                <li>Lightweight, user-friendly interface with a simple button to take screenshots.</li>
+            </ul>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Python</strong>: The core language for scripting and implementing the screenshot tool.</li>
+                <li><strong>Tkinter</strong>: Used to create the GUI (Graphical User Interface).</li>
+                <li><strong>Pillow</strong>: For image processing and screenshot capture functionality.</li>
+                <li><strong>PyInstaller</strong>: Used to package the application as a standalone .exe file.</li>
+                <li><strong>Base64 Encoding</strong>: For easy conversion of screenshots to formats suitable for database storage.</li>
+            </ul>
+            <h2>How to Use</h2>
+            <ol>
+                <li>- Download the BlobCapture.exe file from the repository or clone the project.</li>
+                <li>- Run the .exe file.</li>
+                <li>- Click on the "Select Image" button to capture a screenshot of the desired region.</li>
+                <li>- The captured screenshot will be automatically copied to the clipboard in Base64 format and can easily be used for storing in databases.</li>
+            </ol>
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Add multi-language support for better accessibility.</li>
+                <li>Enhance the GUI with more customization options like changing the screenshot format (PNG, JPEG, etc.).</li>
+                <li>Integrate cloud storage options to save screenshots directly to cloud databases.</li>
+            </ul>
+            <h2>Platform Compatibility</h2>
+            <p><strong>Note</strong>: BlobCapture is currently only compatible with <strong>Windows</strong>. It does not support <strong>MacOS</strong> or other operating systems.</p>
+            <h2>Contributions</h2>
+            <p>Contributions are welcome! If you have any suggestions or improvements, feel free to open a pull request or submit an issue.</p>
+            <h2>License</h2>
+            <p>This project is open-source and available under the <a href="LICENSE" target="_blank">MIT License</a>.</p>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; 2024 Fevzi KILAS. Tüm hakları saklıdır.</p>
+        <p>&copy; 2024 BlobCapture. All rights reserved.</p>
     </footer>
 </body>
 </html>
